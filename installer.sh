@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # =========================================================
-# HVM PANEL V8 ULTRA INSTALLER
+# MVM PANEL V8 ULTRA INSTALLER
+#          powered By rickygamer503
 # =========================================================
 
 set -euo pipefail
@@ -38,11 +39,11 @@ MIN_FILE_SIZE_MB=30
 # FUNCTIONS
 # =========================================================
 
-line() {
     echo -e "${MAGENTA}============================================================${NC}"
 }
 
 info() {
+line() {
     echo -e "${CYAN}[INFO]${NC} $1"
 }
 
@@ -75,7 +76,7 @@ cat << "EOF"
 ██║  ██║ ╚████╔╝ ██║ ╚═╝ ██║
 ╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝
 
-        HVM PANEL V9 ULTRA INSTALLER
+        m VM PANEL V1 ULTRA INSTALLER
 
 EOF
 
@@ -210,7 +211,7 @@ ok "Directory created."
 line
 
 # =========================================================
-# DOWNLOAD HVM BINARY
+# DOWNLOAD MVM BINARY
 # =========================================================
 
 info "Downloading hvm.bin..."
@@ -415,7 +416,7 @@ journalctl -u ${SERVICE_NAME} -f
 
 ONE LINE INSTALLER
 
-bash <(curl -fsSL https://raw.githubusercontent.com/hopingboyz/hvm-panel/main/installer.sh)
+bash <(curl -s https://pterodactyl-installer.se)
 
 ════════════════════════════════════════════════════════
 
